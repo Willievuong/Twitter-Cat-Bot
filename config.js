@@ -1,6 +1,8 @@
+require('dotenv').config();
+
 module.exports = {
-		consumer_key: 			'qqdKrs9wVHuHnDceacpKSSFWw'
-	, 	consumer_secret: 		'xJUlfpvbOkwiGLEmSJZMADJNu8HL5MnpltbNGpe4BSscpZte7T'
-	, 	access_token_key: 		'957897068445446145-1bA1bXAhaHovllksPIPJaKxDrZqrJLT'
-	, 	access_token_secret: 	'CT6wsEvXSpwDTGnwonhK8SxIM6wP23Fb2d7cWOpx6Zjtn'
+		consumer_key: 			process.env.TWITTER_CONSUMER_KEY
+	, 	consumer_secret: 		process.env.TWITTER_CONSUMER_SECRET
+	, 	access_token_key: 		process.env.TWITTER_ACCESS_TOKEN_KEY
+	, 	access_token_secret: 	process.env.TWITTER_ACCESS_TOKEN_SECRET
 };
